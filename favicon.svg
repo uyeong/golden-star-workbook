@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+    <radialGradient id="star-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="star-fill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#d4a017"/>
+      <stop offset="100%" stop-color="#b8860b"/>
+    </linearGradient>
+  </defs>
+  <!-- Background rounded square -->
+  <rect width="512" height="512" rx="108" fill="url(#bg)"/>
+  <!-- Subtle stars in background -->
+  <circle cx="80" cy="90" r="2" fill="#fff" opacity="0.6"/>
+  <circle cx="420" cy="70" r="1.5" fill="#fff" opacity="0.5"/>
+  <circle cx="60" cy="380" r="1.5" fill="#fff" opacity="0.4"/>
+  <circle cx="440" cy="420" r="2" fill="#fff" opacity="0.5"/>
+  <circle cx="150" cy="440" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="370" cy="130" r="1.5" fill="#fff" opacity="0.4"/>
+  <circle cx="130" cy="180" r="1" fill="#fff" opacity="0.3"/>
+  <circle cx="400" cy="300" r="1" fill="#fff" opacity="0.35"/>
+  <!-- Glow behind star -->
+  <circle cx="256" cy="256" r="180" fill="url(#star-glow)"/>
+  <!-- 5-pointed star -->
+  <path d="M256 76 L299 196 L426 196 L322 272 L360 392 L256 316 L152 392 L190 272 L86 196 L213 196 Z"
+        fill="url(#star-fill)" stroke="#fbbf24" stroke-width="4" stroke-linejoin="round"/>
+  <!-- Inner highlight on star -->
+  <path d="M256 110 L290 204 L390 204 L308 264 L338 362 L256 302 L174 362 L204 264 L122 204 L222 204 Z"
+        fill="#fbbf24" opacity="0.3"/>
+</svg>
